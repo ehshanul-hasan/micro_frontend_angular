@@ -38,7 +38,7 @@ module.exports = {
     new ModuleFederationPlugin({
       remotes: {
         admin: 'http://localhost:4201/remoteAdminAppEntry.js',
-        coreapp: 'http://localhost:4202/remoteCoreAppEntry.js',
+        catalogapp: 'http://localhost:4202/remoteCoreAppEntry.js',
       },
       shared: share({
         '@angular/core': {

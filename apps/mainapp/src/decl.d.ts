@@ -1,4 +1,4 @@
 declare module 'admin/Module';
 
-declare module 'coreapp/Module';
+declare module 'catalogapp/Module';
 

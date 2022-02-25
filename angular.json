@@ -3,8 +3,8 @@
   "projects": {
     "admin": "apps/admin",
     "admin-e2e": "apps/admin-e2e",
-    "coreapp": "apps/coreapp",
-    "coreapp-e2e": "apps/coreapp-e2e",
+    "catalogapp": "apps/catalogapp",
+    "catalogapp-e2e": "apps/catalogapp-e2e",
     "mainapp": "apps/mainapp",
     "mainapp-e2e": "apps/mainapp-e2e",
     "shared-app-logger": "libs/shared/app-logger",

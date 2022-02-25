@@ -102,7 +102,7 @@
       "executor": "@nrwl/workspace:run-commands",
       "options": {
         "commands": [
-          "nx serve coreapp",
+          "nx serve catalogapp",
           "nx serve admin",
           "nx serve mainapp"
         ]

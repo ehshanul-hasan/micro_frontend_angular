@@ -19,7 +19,7 @@ sharedMappings.register(
 
 module.exports = {
   output: {
-    uniqueName: 'coreapp',
+    uniqueName: 'catalogapp',
     publicPath: 'auto',
 
   },
@@ -36,10 +36,10 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'coreapp',
+      name: 'catalogapp',
       filename: 'remoteCoreAppEntry.js',
       exposes: {
-        './Module': 'apps/coreapp/src/app/remote-entry/entry.module.ts',
+        './Module': 'apps/catalogapp/src/app/remote-entry/entry.module.ts',
       },
       shared: share({
         '@angular/core': {

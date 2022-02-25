@@ -20,7 +20,7 @@ const coreRoutes: Routes = [
     {
       path: 'catalog',
       loadChildren: () =>
-        import('coreapp/Module').then((m) => m.RemoteEntryModule),
+        import('catalogapp/Module').then((m) => m.RemoteEntryModule),
     }
 
   ] }

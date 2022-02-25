@@ -1,17 +1,17 @@
 {
-  "root": "apps/coreapp-e2e",
-  "sourceRoot": "apps/coreapp-e2e/src",
+  "root": "apps/catalogapp-e2e",
+  "sourceRoot": "apps/catalogapp-e2e/src",
   "projectType": "application",
   "targets": {
     "e2e": {
       "executor": "@nrwl/cypress:cypress",
       "options": {
-        "cypressConfig": "apps/coreapp-e2e/cypress.json",
-        "devServerTarget": "coreapp:serve:development"
+        "cypressConfig": "apps/catalogapp-e2e/cypress.json",
+        "devServerTarget": "catalogapp:serve:development"
       },
       "configurations": {
         "production": {
-          "devServerTarget": "coreapp:serve:production"
+          "devServerTarget": "catalogapp:serve:production"
         }
       }
     },
@@ -22,13 +22,13 @@
       ],
       "options": {
         "lintFilePatterns": [
-          "apps/coreapp-e2e/**/*.{js,ts}"
+          "apps/catalogapp-e2e/**/*.{js,ts}"
         ]
       }
     }
   },
   "tags": [],
   "implicitDependencies": [
-    "coreapp"
+    "catalogapp"
   ]
 }

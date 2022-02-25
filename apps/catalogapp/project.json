@@ -1,7 +1,7 @@
 {
   "projectType": "application",
-  "root": "apps/coreapp",
-  "sourceRoot": "apps/coreapp/src",
+  "root": "apps/catalogapp",
+  "sourceRoot": "apps/catalogapp/src",
   "prefix": "clientui",
   "targets": {
     "build": {
@@ -10,22 +10,22 @@
         "{options.outputPath}"
       ],
       "options": {
-        "outputPath": "dist/apps/coreapp",
-        "index": "apps/coreapp/src/index.html",
-        "main": "apps/coreapp/src/main.ts",
-        "polyfills": "apps/coreapp/src/polyfills.ts",
-        "tsConfig": "apps/coreapp/tsconfig.app.json",
+        "outputPath": "dist/apps/catalogapp",
+        "index": "apps/catalogapp/src/index.html",
+        "main": "apps/catalogapp/src/main.ts",
+        "polyfills": "apps/catalogapp/src/polyfills.ts",
+        "tsConfig": "apps/catalogapp/tsconfig.app.json",
         "assets": [
-          "apps/coreapp/src/favicon.ico",
-          "apps/coreapp/src/assets"
+          "apps/catalogapp/src/favicon.ico",
+          "apps/catalogapp/src/assets"
         ],
         "styles": [
           "node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
-          "apps/coreapp/src/styles.css"
+          "apps/catalogapp/src/styles.css"
         ],
         "scripts": [],
         "customWebpackConfig": {
-          "path": "apps/coreapp/webpack.config.js"
+          "path": "apps/catalogapp/webpack.config.js"
         }
       },
       "configurations": {
@@ -44,13 +44,13 @@
           ],
           "fileReplacements": [
             {
-              "replace": "apps/coreapp/src/environments/environment.ts",
-              "with": "apps/coreapp/src/environments/environment.prod.ts"
+              "replace": "apps/catalogapp/src/environments/environment.ts",
+              "with": "apps/catalogapp/src/environments/environment.prod.ts"
             }
           ],
           "outputHashing": "all",
           "customWebpackConfig": {
-            "path": "apps/coreapp/webpack.prod.config.js"
+            "path": "apps/catalogapp/webpack.prod.config.js"
           }
         },
         "development": {
@@ -68,10 +68,10 @@
       "executor": "@nrwl/angular:webpack-server",
       "configurations": {
         "production": {
-          "browserTarget": "coreapp:build:production"
+          "browserTarget": "catalogapp:build:production"
         },
         "development": {
-          "browserTarget": "coreapp:build:development"
+          "browserTarget": "catalogapp:build:development"
         }
       },
       "defaultConfiguration": "development",
@@ -83,25 +83,25 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "coreapp:build"
+        "browserTarget": "catalogapp:build"
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "apps/coreapp/src/**/*.ts",
-          "apps/coreapp/src/**/*.html"
+          "apps/catalogapp/src/**/*.ts",
+          "apps/catalogapp/src/**/*.html"
         ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": [
-        "coverage/apps/coreapp"
+        "coverage/apps/catalogapp"
       ],
       "options": {
-        "jestConfig": "apps/coreapp/jest.config.js",
+        "jestConfig": "apps/catalogapp/jest.config.js",
         "passWithNoTests": true
       }
     }
