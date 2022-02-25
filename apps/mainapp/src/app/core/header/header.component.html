@@ -1,0 +1,25 @@
+<nz-header>
+    <div class="logo">
+      <img class="header-image" src="">
+    </div>
+    <ul nz-menu nzTheme="light" nzMode="horizontal">
+      <li nz-menu-item *ngFor="let nav_menu of nav_menus; let i = index">
+        <span (click)="onMenuItemClick(i)">{{nav_menu}}</span>
+      </li>
+
+      <li class="right-aligned">
+        <div class="user-menu" nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu">
+          <span class="user-name">Ehshanul Hasan</span>
+          <nz-dropdown-menu #menu="nzDropdownMenu">
+            <ul nz-menu style="width: 160px;">
+              <li nz-menu-item>
+                <i nz-icon nzType="logout"></i> 
+                <span>Log out</span>
+              </li>
+            </ul>
+          </nz-dropdown-menu>
+        </div>
+      </li>
+    </ul>
+  </nz-header>
+

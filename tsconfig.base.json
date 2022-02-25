@@ -1,0 +1,29 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@ClientApp/shared/app-logger": ["libs/shared/app-logger/src/index.ts"],
+      "@ClientApp/shared/common": ["libs/shared/common/src/index.ts"],
+      "@ClientApp/shared/data-access-user": [
+        "libs/shared/data-access-user/src/index.ts"
+      ],
+      "@ClientApp/shared/http-utility": [
+        "libs/shared/http-utility/src/index.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

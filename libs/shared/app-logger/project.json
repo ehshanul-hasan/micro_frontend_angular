@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/shared/app-logger",
+  "sourceRoot": "libs/shared/app-logger/src",
+  "prefix": "ClientApp",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/app-logger"],
+      "options": {
+        "jestConfig": "libs/shared/app-logger/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/app-logger/src/**/*.ts",
+          "libs/shared/app-logger/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

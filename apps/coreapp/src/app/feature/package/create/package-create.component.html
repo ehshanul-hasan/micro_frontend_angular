@@ -1,0 +1,39 @@
+<nz-card nzTitle="{{title}}">
+    <form nz-form [formGroup]="form" (ngSubmit)="submit()">
+        <nz-form-item>
+          <nz-form-label [nzSpan]="7" nzRequired>Name</nz-form-label>
+          <nz-form-control [nzSpan]="12" nzHasFeedback nzValidatingTip="Validating..." [nzErrorTip]="userErrorTpl">
+            <input nz-input formControlName="name" placeholder="name" />
+            <ng-template #userErrorTpl let-control>
+              <ng-container *ngIf="control.hasError('required')">Please input offertype name!</ng-container>
+              <ng-container *ngIf="control.hasError('duplicated')">The username is redundant!</ng-container>
+            </ng-template>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSpan]="7" nzRequired>Description</nz-form-label>
+          <nz-form-control [nzSpan]="12" nzHasFeedback [nzErrorTip]="emailErrorTpl">
+            <input nz-input formControlName="description" placeholder="description"/>
+            <ng-template #emailErrorTpl let-control>
+              <ng-container *ngIf="control.hasError('required')">Please input offertype Description</ng-container>
+            </ng-template>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-control [nzOffset]="7" [nzSpan]="12">
+            <button nz-button nzType="primary" [disabled]="!form.valid">
+              <span *ngIf="mode=='add'">
+                Create
+              </span>
+              <span *ngIf="mode=='edit'">
+                Update
+              </span>
+            </button>
+            <button nz-button (click)="cancel()">Cancel</button>
+          </nz-form-control>
+        </nz-form-item>
+      </form>
+</nz-card>
+
+
+

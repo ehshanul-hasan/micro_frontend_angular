@@ -1,0 +1,4 @@
+{
+    "host": "localhost",
+    "elasticUri":"http://localhost:28080"
+}

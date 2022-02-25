@@ -1,0 +1,30 @@
+<nz-page-header>
+  <nz-page-header-title>
+    <button nz-button nzType="primary" (click)="create(0)">
+      Create New
+    </button>
+  </nz-page-header-title>
+</nz-page-header>
+
+<nz-table #basicTable [nzData]="packages" [nzLoading]="loading">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of basicTable.data" (click)="details(data.id)">
+      <td>{{ data.name }}</td>
+      <td>{{ data.description }}</td>
+      <td>{{ data.price }}</td>
+      <td [nzRight]="true" [nzEllipsis]="false">
+        <button nz-button (click)="$event.stopPropagation();create(data.id)">Edit</button>
+        <nz-divider nzType="vertical"></nz-divider>
+        <button nz-popconfirm nzPopconfirmTitle="Are you sure you want to delete this package?" (click)="$event.stopPropagation()" (nzOnConfirm)="delete(data.id)" nzPopconfirmPlacement="bottomRight" nz-button>Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</nz-table>

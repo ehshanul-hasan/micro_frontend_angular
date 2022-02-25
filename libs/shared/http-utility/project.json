@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/shared/http-utility",
+  "sourceRoot": "libs/shared/http-utility/src",
+  "prefix": "clientui",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/http-utility"],
+      "options": {
+        "jestConfig": "libs/shared/http-utility/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/http-utility/src/**/*.ts",
+          "libs/shared/http-utility/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

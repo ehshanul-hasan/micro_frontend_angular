@@ -1,0 +1,29 @@
+  
+ .header {
+    background: lightblue;
+    text-transform: uppercase;
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 200px;;
+    padding-top: 20px;
+  }
+  
+  .routing-area {
+    background: white;
+    color:black;
+    text-align: center;
+    vertical-align: top;
+  }
+  
+  .footer {
+    background: whitesmoke;
+    color:royalblue;
+    text-align: center;
+    vertical-align: top;
+    padding-top: 25px;
+  }
+  
+  
+  .content {
+    min-width: 300px;
+  }

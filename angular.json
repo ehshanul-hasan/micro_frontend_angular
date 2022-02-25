@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "projects": {
+    "admin": "apps/admin",
+    "admin-e2e": "apps/admin-e2e",
+    "coreapp": "apps/coreapp",
+    "coreapp-e2e": "apps/coreapp-e2e",
+    "mainapp": "apps/mainapp",
+    "mainapp-e2e": "apps/mainapp-e2e",
+    "shared-app-logger": "libs/shared/app-logger",
+    "shared-common": "libs/shared/common",
+    "shared-data-access-user": "libs/shared/data-access-user",
+    "shared-http-utility": "libs/shared/http-utility"
+  }
+}

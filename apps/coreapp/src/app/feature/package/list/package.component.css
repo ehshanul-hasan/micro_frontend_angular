@@ -1,0 +1,11 @@
+.send-request {
+  margin-bottom: 16px;
+}
+
+tbody tr {
+  cursor: pointer;
+}
+
+.ant-page-header {
+  padding: 0px 24px 15px !important;
+}

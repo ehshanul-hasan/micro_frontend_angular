@@ -1,0 +1,14 @@
+
+<nz-layout class="layout">
+  <clientui-header (onMenuItemChange)="setCurrentNavMenu($event)"></clientui-header>
+  <nz-content>
+    <nz-breadcrumb>
+      <nz-breadcrumb-item>Tour Explorer</nz-breadcrumb-item>
+      <nz-breadcrumb-item>{{current_nav_menu}}</nz-breadcrumb-item>
+    </nz-breadcrumb>
+    <div class="inner-content">
+      <router-outlet></router-outlet>
+    </div>
+  </nz-content>
+  <nz-footer>Copyright © 2022, MFE. All rights reserved</nz-footer>
+</nz-layout>
