@@ -15,7 +15,7 @@ export class PackageCreateComponent extends FormComponent {
   public loader: BooleanInput = false;
   public title: string = '';
 
-  constructor(injector: Injector, private offeringTypeHttpService: PackageHttpService, private activatedRoute: ActivatedRoute) {
+  constructor(injector: Injector, private packageHttpService: PackageHttpService, private activatedRoute: ActivatedRoute) {
     super(injector);
   }
 
@@ -39,14 +39,14 @@ export class PackageCreateComponent extends FormComponent {
     const body = this.constructObject(this.form.controls);
     this.submitForm(
       {
-        request: this.offeringTypeHttpService.add(body),
+        request: this.packageHttpService.add(body),
         succeed: res => {
           this.cancel();
           this.success("Created succesfully.");
         }
       },
       {
-        request: this.offeringTypeHttpService.update(this.id, body),
+        request: this.packageHttpService.update(this.id, body),
         succeed: res => {
           this.cancel();
           this.success("Updated Successfully.");
@@ -57,7 +57,7 @@ export class PackageCreateComponent extends FormComponent {
 
   public get(id: number) {
     if (id != null) {
-      this.subscribe(this.offeringTypeHttpService.getById(id),
+      this.subscribe(this.packageHttpService.getById(id),
         (res: any) => {
           this.setValues(this.form.controls, res.data);
           //this.loading = false;
