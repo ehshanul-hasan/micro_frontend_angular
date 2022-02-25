@@ -103,7 +103,7 @@
       "options": {
         "commands": [
           "nx serve catalogapp",
-          "nx serve admin",
+          "nx serve reservationapp",
           "nx serve mainapp"
         ]
       }

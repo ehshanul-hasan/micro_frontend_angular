@@ -1,7 +1,7 @@
 {
   "projectType": "application",
-  "root": "apps/admin",
-  "sourceRoot": "apps/admin/src",
+  "root": "apps/reservationapp",
+  "sourceRoot": "apps/reservationapp/src",
   "prefix": "clientui",
   "targets": {
     "build": {
@@ -10,22 +10,22 @@
         "{options.outputPath}"
       ],
       "options": {
-        "outputPath": "dist/apps/admin",
-        "index": "apps/admin/src/index.html",
-        "main": "apps/admin/src/main.ts",
-        "polyfills": "apps/admin/src/polyfills.ts",
-        "tsConfig": "apps/admin/tsconfig.app.json",
+        "outputPath": "dist/apps/reservationapp",
+        "index": "apps/reservationapp/src/index.html",
+        "main": "apps/reservationapp/src/main.ts",
+        "polyfills": "apps/reservationapp/src/polyfills.ts",
+        "tsConfig": "apps/reservationapp/tsconfig.app.json",
         "assets": [
-          "apps/admin/src/favicon.ico",
-          "apps/admin/src/assets"
+          "apps/reservationapp/src/favicon.ico",
+          "apps/reservationapp/src/assets"
         ],
         "styles": [
           "node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
-          "apps/admin/src/styles.css"
+          "apps/reservationapp/src/styles.css"
         ],
         "scripts": [],
         "customWebpackConfig": {
-          "path": "apps/admin/webpack.config.js"
+          "path": "apps/reservationapp/webpack.config.js"
         }
       },
       "configurations": {
@@ -44,13 +44,13 @@
           ],
           "fileReplacements": [
             {
-              "replace": "apps/admin/src/environments/environment.ts",
-              "with": "apps/admin/src/environments/environment.prod.ts"
+              "replace": "apps/reservationapp/src/environments/environment.ts",
+              "with": "apps/reservationapp/src/environments/environment.prod.ts"
             }
           ],
           "outputHashing": "all",
           "customWebpackConfig": {
-            "path": "apps/admin/webpack.prod.config.js"
+            "path": "apps/reservationapp/webpack.prod.config.js"
           }
         },
         "development": {
@@ -68,10 +68,10 @@
       "executor": "@nrwl/angular:webpack-server",
       "configurations": {
         "production": {
-          "browserTarget": "admin:build:production"
+          "browserTarget": "reservationapp:build:production"
         },
         "development": {
-          "browserTarget": "admin:build:development"
+          "browserTarget": "reservationapp:build:development"
         }
       },
       "defaultConfiguration": "development",
@@ -83,25 +83,25 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "admin:build"
+        "browserTarget": "reservationapp:build"
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "apps/admin/src/**/*.ts",
-          "apps/admin/src/**/*.html"
+          "apps/reservationapp/src/**/*.ts",
+          "apps/reservationapp/src/**/*.html"
         ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": [
-        "coverage/apps/admin"
+        "coverage/apps/reservationapp"
       ],
       "options": {
-        "jestConfig": "apps/admin/jest.config.js",
+        "jestConfig": "apps/reservationapp/jest.config.js",
         "passWithNoTests": true
       }
     }

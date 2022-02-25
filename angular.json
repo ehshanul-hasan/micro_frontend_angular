@@ -1,8 +1,8 @@
 {
   "version": 2,
   "projects": {
-    "admin": "apps/admin",
-    "admin-e2e": "apps/admin-e2e",
+    "reservationapp": "apps/reservationapp",
+    "reservationapp-e2e": "apps/reservationapp-e2e",
     "catalogapp": "apps/catalogapp",
     "catalogapp-e2e": "apps/catalogapp-e2e",
     "mainapp": "apps/mainapp",

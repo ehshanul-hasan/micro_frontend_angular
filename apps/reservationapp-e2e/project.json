@@ -1,17 +1,17 @@
 {
-  "root": "apps/admin-e2e",
-  "sourceRoot": "apps/admin-e2e/src",
+  "root": "apps/reservationapp-e2e",
+  "sourceRoot": "apps/reservationapp-e2e/src",
   "projectType": "application",
   "targets": {
     "e2e": {
       "executor": "@nrwl/cypress:cypress",
       "options": {
-        "cypressConfig": "apps/admin-e2e/cypress.json",
-        "devServerTarget": "admin:serve:development"
+        "cypressConfig": "apps/reservationapp-e2e/cypress.json",
+        "devServerTarget": "reservationapp:serve:development"
       },
       "configurations": {
         "production": {
-          "devServerTarget": "admin:serve:production"
+          "devServerTarget": "reservationapp:serve:production"
         }
       }
     },
@@ -22,13 +22,13 @@
       ],
       "options": {
         "lintFilePatterns": [
-          "apps/admin-e2e/**/*.{js,ts}"
+          "apps/reservationapp-e2e/**/*.{js,ts}"
         ]
       }
     }
   },
   "tags": [],
   "implicitDependencies": [
-    "admin"
+    "reservationapp"
   ]
 }

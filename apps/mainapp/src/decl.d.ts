@@ -1,4 +1,4 @@
-declare module 'admin/Module';
+declare module 'reservationapp/Module';
 
 declare module 'catalogapp/Module';
 

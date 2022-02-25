@@ -19,7 +19,7 @@ sharedMappings.register(
 
 module.exports = {
   output: {
-    uniqueName: 'admin',
+    uniqueName: 'reservationapp',
     publicPath: 'auto',
 
   },
@@ -36,10 +36,10 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'admin',
+      name: 'reservationapp',
       filename: 'remoteAdminAppEntry.js',
       exposes: {
-        './Module': 'apps/admin/src/app/remote-entry/entry.module.ts',
+        './Module': 'apps/reservationapp/src/app/remote-entry/entry.module.ts',
       },
       shared: share({
         '@angular/core': {

@@ -28,7 +28,8 @@ export class PackageCreateComponent extends FormComponent {
     this.onCheckMode = id => this.get(id);
     this.createForm({
       name: [null, [Validators.required]],
-      description: [null, [Validators.required]]
+      description: [null, [Validators.required]],
+      cost: [0.0, [Validators.required]],
     });
     super.ngOnInit(this.activatedRoute.snapshot);
     this.title = this.mode == "edit" ? "Update Package" : "Add Package";

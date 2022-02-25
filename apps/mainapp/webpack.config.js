@@ -37,7 +37,7 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
       remotes: {
-        admin: 'http://localhost:4201/remoteAdminAppEntry.js',
+        reservationapp: 'http://localhost:4201/remoteAdminAppEntry.js',
         catalogapp: 'http://localhost:4202/remoteCoreAppEntry.js',
       },
       shared: share({

@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { RemoteEntryComponent } from './entry.component';
 import { RemoteRoutingModule } from './remote-routing.module';
-import { AdminService } from '../services/admin.service';
 import { CoreModule } from '../core/core.module';
 
 @NgModule({
@@ -13,8 +12,7 @@ import { CoreModule } from '../core/core.module';
     CoreModule,
     RemoteRoutingModule
   ],
-  providers: [
-    AdminService, 
+  providers: [ 
   ]
 })
 export class RemoteEntryModule {}

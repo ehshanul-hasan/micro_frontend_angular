@@ -14,7 +14,7 @@ const coreRoutes: Routes = [
 
     {
       path: 'reservation',
-      loadChildren: () => import('admin/Module').then((m) => m.RemoteEntryModule),
+      loadChildren: () => import('reservationapp/Module').then((m) => m.RemoteEntryModule),
     },
 
     {

@@ -5,7 +5,7 @@
           <nz-form-control [nzSpan]="12" nzHasFeedback nzValidatingTip="Validating..." [nzErrorTip]="userErrorTpl">
             <input nz-input formControlName="name" placeholder="name" />
             <ng-template #userErrorTpl let-control>
-              <ng-container *ngIf="control.hasError('required')">Please input offertype name!</ng-container>
+              <ng-container *ngIf="control.hasError('required')">Please input package name!</ng-container>
               <ng-container *ngIf="control.hasError('duplicated')">The username is redundant!</ng-container>
             </ng-template>
           </nz-form-control>
@@ -15,7 +15,17 @@
           <nz-form-control [nzSpan]="12" nzHasFeedback [nzErrorTip]="emailErrorTpl">
             <input nz-input formControlName="description" placeholder="description"/>
             <ng-template #emailErrorTpl let-control>
-              <ng-container *ngIf="control.hasError('required')">Please input offertype Description</ng-container>
+              <ng-container *ngIf="control.hasError('required')">Please input package Description</ng-container>
+            </ng-template>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSpan]="7" nzRequired>Cost</nz-form-label>
+          <nz-form-control [nzSpan]="12" nzHasFeedback [nzErrorTip]="costErrorTpl">
+            <input nz-input formControlName="cost" placeholder="cost"/>
+            <ng-template #costErrorTpl let-control>
+              <ng-container *ngIf="control.hasError('required')">Please input package cost</ng-container>
+              <input nz-input formControlName="cost" placeholder="cost"/>
             </ng-template>
           </nz-form-control>
         </nz-form-item>

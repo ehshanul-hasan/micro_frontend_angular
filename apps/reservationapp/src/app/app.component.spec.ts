@@ -8,10 +8,10 @@ import { RouterTestingModule } from '@angular/router/testing';
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'admin'`, () => {
+  it(`should have as title 'reservationapp'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('admin');
+    expect(app.title).toEqual('reservationapp');
   });
 
   it('should render title', () => {
@@ -19,7 +19,7 @@ import { RouterTestingModule } from '@angular/router/testing';
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain(
-      'Welcome admin'
+      'Welcome reservationapp'
     );
   });
 });
