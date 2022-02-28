@@ -1,8 +1,7 @@
 
 # This is a microfront end solution serving the back end microservice https://github.com/ehshanul-hasan/microservice-cutting-edge.git
 
-![Architecture_Diagram vpd](https://user-images.githubusercontent.com/77856935/155949969-dfffbd74-eab8-4f38-8f3c-ba2ad3f84195.jpg)
-
+![Architecture_Diagram_updated vpd](https://user-images.githubusercontent.com/77856935/155950254-e702fac6-8646-477b-b1ae-63151b14a7e7.jpg)
 
 The frontend part of this architecture is implemented int his project as a demo.
 
