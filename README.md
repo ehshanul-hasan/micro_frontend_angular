@@ -1,7 +1,7 @@
 
 # This is a microfront end solution serving the back end microservice https://github.com/ehshanul-hasan/microservice-cutting-edge.git
 
-<img width="550" alt="ms_arch_up" src="https://user-images.githubusercontent.com/77856935/155950655-fd04cfe8-5f1a-43e8-9572-e8f93af48cde.PNG">
+<img width="649" alt="ms_arch_up" src="https://user-images.githubusercontent.com/77856935/155951013-626d6191-ab83-4028-9d26-c0395045b117.PNG">
 
 
 The frontend part of this architecture is implemented int his project as a demo.
